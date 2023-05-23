@@ -12,7 +12,9 @@ app.use(express.json())
 app.use("/api", audioRouter)
 
 
-
+app.get('/', async(req, res) => {
+res.json("Welcome......")
+});
         
       
 
