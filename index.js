@@ -6,16 +6,17 @@ const app = express();
 const {connection} = require("./config/config")
 const {audioRouter} = require("./routes/audio.route")
 require("dotenv").config()
-// Middleware
+// Middleware========================================================>
 app.use(bodyParser.json());
 app.use(express.json())
 app.use("/api", audioRouter)
 
 
+
         
       
 
-// Start the server
+// Start the server====================================================>
 
 app.listen(process.env.port, async () => {
     try {
