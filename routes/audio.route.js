@@ -15,6 +15,7 @@ audioRouter.get('/audio-elements', async(req, res) => {
     }
   });
   
+  //http://localhost:8000/api/audio-elements/
 
 
 // //GetById==================================================================================================>
@@ -33,6 +34,7 @@ audioRouter.get('/audio-elements/:_id', async(req, res) => {
   }
 });
 
+//http://localhost:8000/api/audio-elements/646d8b11d882ceeb132f7709
 
 //POST==================================================================================================>
 audioRouter.post('/audio-elements', async(req, res) => {
@@ -48,6 +50,7 @@ audioRouter.post('/audio-elements', async(req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+//http://localhost:8000/api/audio-elements/
 
 //PUT==================================================================================================>
 audioRouter.put('/audio-elements/:id', async(req, res) => {
@@ -64,6 +67,7 @@ audioRouter.put('/audio-elements/:id', async(req, res) => {
     }
 });
 
+//http://localhost:8000/api/audio-elements/646d8b11d882ceeb132f7709
 
 //DeleteById==================================================================================================>
 audioRouter.delete('/audio-elements/:id', async(req, res) => {
@@ -79,6 +83,10 @@ audioRouter.delete('/audio-elements/:id', async(req, res) => {
         res.status(500).json({ error: 'Internal server error' });
     }
 });
+
+//http://localhost:8000/api/audio-elements/646d8b11d882ceeb132f7709
+
+
 
 //audio-fragments================================================================================================>
 audioRouter.get('/audio-fragments', async (req, res) => {
@@ -115,6 +123,9 @@ audioRouter.get('/audio-fragments', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+
+
+//http://localhost:8000/api/audio-fragments?start_time=5&end_time=90
 
 
 module.exports = {
